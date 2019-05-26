@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h3>Search Results!</h3>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+th, td {
+  padding: 8px;
+  text-align: left;
+  font-weight:normal;
+}
+</style>
+</head>
+<body>
+<table id="ouput">
+<tr>
+  <th>Full name</th>
+  <th>Rank</th>
+</tr>
+{% for item in results %}
+<tr>
+  <th > {{ item.0 }}</th>
+  <th > {{ item.1 }}</th>
+</tr>
+{% endfor %}
+</table>
+<p>Return to home page : <a href="{% url 'home_page' %}">click here</a></p>
+<p><small>* No results found if table is empty</small></p>
+</body>
+</html>

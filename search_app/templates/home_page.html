@@ -1,0 +1,7 @@
+<h3>Hello, User!</h3>
+<form action="/search_string" method="post">
+    {% csrf_token %}
+    <label for="search_string">Enter a string : </label>
+    <input id="search_string" type="text" name="search_string" value="">
+    <input type="submit" value="OK">
+</form>
