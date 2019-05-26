@@ -1,5 +1,5 @@
 # Instant-Search-Application
-A sample Django application to search a given query term from csv file 
+A sample Django application to search a given query term from csv file to find possible matching words
 using data structures Trie and Linked list 
 
 ### Installing dependencies
