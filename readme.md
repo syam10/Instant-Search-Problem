@@ -16,8 +16,7 @@ python3 manage.py runserver
 3. If run locally visit localhost:8000 and enter the string to get results
 
 
-
-###Implementation logic
+### Implementation logic
 1. Read data from csv file and store each string and its substring(formed by removing its first character every time until
 substring length reaches to 3 (Example: word "final" will form ["final", "inal", "nal"])) in Trie data structure
 2. Trie Object contains two lists in each node, where one list stores the information about child nodes and the other list stores a 
